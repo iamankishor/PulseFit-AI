@@ -1,0 +1,641 @@
+[
+  {
+    "id": 1,
+    "name": "Roti",
+    "serving": "100 g (illustrative)",
+    "protein": 2,
+    "carbs": 5,
+    "fats": 1,
+    "calories": 37
+  },
+  {
+    "id": 2,
+    "name": "Chapati",
+    "serving": "100 g (illustrative)",
+    "protein": 9,
+    "carbs": 16,
+    "fats": 4,
+    "calories": 136
+  },
+  {
+    "id": 3,
+    "name": "Rice",
+    "serving": "100 g (illustrative)",
+    "protein": 16,
+    "carbs": 27,
+    "fats": 7,
+    "calories": 235
+  },
+  {
+    "id": 4,
+    "name": "Brown rice",
+    "serving": "100 g (illustrative)",
+    "protein": 23,
+    "carbs": 38,
+    "fats": 10,
+    "calories": 334
+  },
+  {
+    "id": 5,
+    "name": "Dal tadka",
+    "serving": "100 g (illustrative)",
+    "protein": 6,
+    "carbs": 49,
+    "fats": 13,
+    "calories": 337
+  },
+  {
+    "id": 6,
+    "name": "Moong dal",
+    "serving": "100 g (illustrative)",
+    "protein": 13,
+    "carbs": 12,
+    "fats": 2,
+    "calories": 118
+  },
+  {
+    "id": 7,
+    "name": "Rajma",
+    "serving": "100 g (illustrative)",
+    "protein": 20,
+    "carbs": 23,
+    "fats": 5,
+    "calories": 217
+  },
+  {
+    "id": 8,
+    "name": "Chole",
+    "serving": "100 g (illustrative)",
+    "protein": 3,
+    "carbs": 34,
+    "fats": 8,
+    "calories": 220
+  },
+  {
+    "id": 9,
+    "name": "Paneer",
+    "serving": "100 g (illustrative)",
+    "protein": 10,
+    "carbs": 45,
+    "fats": 11,
+    "calories": 319
+  },
+  {
+    "id": 10,
+    "name": "Paneer curry",
+    "serving": "100 g (illustrative)",
+    "protein": 17,
+    "carbs": 8,
+    "fats": 14,
+    "calories": 226
+  },
+  {
+    "id": 11,
+    "name": "Palak paneer",
+    "serving": "100 g (illustrative)",
+    "protein": 24,
+    "carbs": 19,
+    "fats": 3,
+    "calories": 199
+  },
+  {
+    "id": 12,
+    "name": "Aloo gobi",
+    "serving": "100 g (illustrative)",
+    "protein": 7,
+    "carbs": 30,
+    "fats": 6,
+    "calories": 202
+  },
+  {
+    "id": 13,
+    "name": "Sabzi",
+    "serving": "100 g (illustrative)",
+    "protein": 14,
+    "carbs": 41,
+    "fats": 9,
+    "calories": 301
+  },
+  {
+    "id": 14,
+    "name": "Curd",
+    "serving": "100 g (illustrative)",
+    "protein": 21,
+    "carbs": 52,
+    "fats": 12,
+    "calories": 400
+  },
+  {
+    "id": 15,
+    "name": "Greek yogurt",
+    "serving": "100 g (illustrative)",
+    "protein": 4,
+    "carbs": 15,
+    "fats": 1,
+    "calories": 85
+  },
+  {
+    "id": 16,
+    "name": "Milk",
+    "serving": "100 g (illustrative)",
+    "protein": 11,
+    "carbs": 26,
+    "fats": 4,
+    "calories": 184
+  },
+  {
+    "id": 17,
+    "name": "Buttermilk",
+    "serving": "100 g (illustrative)",
+    "protein": 18,
+    "carbs": 37,
+    "fats": 7,
+    "calories": 283
+  },
+  {
+    "id": 18,
+    "name": "Lassi",
+    "serving": "100 g (illustrative)",
+    "protein": 25,
+    "carbs": 48,
+    "fats": 10,
+    "calories": 382
+  },
+  {
+    "id": 19,
+    "name": "Idli",
+    "serving": "100 g (illustrative)",
+    "protein": 8,
+    "carbs": 11,
+    "fats": 13,
+    "calories": 193
+  },
+  {
+    "id": 20,
+    "name": "Dosa",
+    "serving": "100 g (illustrative)",
+    "protein": 15,
+    "carbs": 22,
+    "fats": 2,
+    "calories": 166
+  },
+  {
+    "id": 21,
+    "name": "Upma",
+    "serving": "100 g (illustrative)",
+    "protein": 22,
+    "carbs": 33,
+    "fats": 5,
+    "calories": 265
+  },
+  {
+    "id": 22,
+    "name": "Poha",
+    "serving": "100 g (illustrative)",
+    "protein": 5,
+    "carbs": 44,
+    "fats": 8,
+    "calories": 268
+  },
+  {
+    "id": 23,
+    "name": "Oats",
+    "serving": "100 g (illustrative)",
+    "protein": 12,
+    "carbs": 7,
+    "fats": 11,
+    "calories": 175
+  },
+  {
+    "id": 24,
+    "name": "Banana",
+    "serving": "100 g (illustrative)",
+    "protein": 19,
+    "carbs": 18,
+    "fats": 14,
+    "calories": 274
+  },
+  {
+    "id": 25,
+    "name": "Apple",
+    "serving": "100 g (illustrative)",
+    "protein": 2,
+    "carbs": 29,
+    "fats": 3,
+    "calories": 151
+  },
+  {
+    "id": 26,
+    "name": "Orange",
+    "serving": "100 g (illustrative)",
+    "protein": 9,
+    "carbs": 40,
+    "fats": 6,
+    "calories": 250
+  },
+  {
+    "id": 27,
+    "name": "Mango",
+    "serving": "100 g (illustrative)",
+    "protein": 16,
+    "carbs": 51,
+    "fats": 9,
+    "calories": 349
+  },
+  {
+    "id": 28,
+    "name": "Papaya",
+    "serving": "100 g (illustrative)",
+    "protein": 23,
+    "carbs": 14,
+    "fats": 12,
+    "calories": 256
+  },
+  {
+    "id": 29,
+    "name": "Guava",
+    "serving": "100 g (illustrative)",
+    "protein": 6,
+    "carbs": 25,
+    "fats": 1,
+    "calories": 133
+  },
+  {
+    "id": 30,
+    "name": "Almonds",
+    "serving": "100 g (illustrative)",
+    "protein": 13,
+    "carbs": 36,
+    "fats": 4,
+    "calories": 232
+  },
+  {
+    "id": 31,
+    "name": "Peanuts",
+    "serving": "100 g (illustrative)",
+    "protein": 20,
+    "carbs": 47,
+    "fats": 7,
+    "calories": 331
+  },
+  {
+    "id": 32,
+    "name": "Walnuts",
+    "serving": "100 g (illustrative)",
+    "protein": 3,
+    "carbs": 10,
+    "fats": 10,
+    "calories": 142
+  },
+  {
+    "id": 33,
+    "name": "Peanut butter",
+    "serving": "100 g (illustrative)",
+    "protein": 10,
+    "carbs": 21,
+    "fats": 13,
+    "calories": 241
+  },
+  {
+    "id": 34,
+    "name": "Egg",
+    "serving": "100 g (illustrative)",
+    "protein": 17,
+    "carbs": 32,
+    "fats": 2,
+    "calories": 214
+  },
+  {
+    "id": 35,
+    "name": "Egg whites",
+    "serving": "100 g (illustrative)",
+    "protein": 24,
+    "carbs": 43,
+    "fats": 5,
+    "calories": 313
+  },
+  {
+    "id": 36,
+    "name": "Chicken breast",
+    "serving": "100 g (illustrative)",
+    "protein": 7,
+    "carbs": 6,
+    "fats": 8,
+    "calories": 124
+  },
+  {
+    "id": 37,
+    "name": "Chicken curry",
+    "serving": "100 g (illustrative)",
+    "protein": 14,
+    "carbs": 17,
+    "fats": 11,
+    "calories": 223
+  },
+  {
+    "id": 38,
+    "name": "Fish",
+    "serving": "100 g (illustrative)",
+    "protein": 21,
+    "carbs": 28,
+    "fats": 14,
+    "calories": 322
+  },
+  {
+    "id": 39,
+    "name": "Tuna",
+    "serving": "100 g (illustrative)",
+    "protein": 4,
+    "carbs": 39,
+    "fats": 3,
+    "calories": 199
+  },
+  {
+    "id": 40,
+    "name": "Salmon",
+    "serving": "100 g (illustrative)",
+    "protein": 11,
+    "carbs": 50,
+    "fats": 6,
+    "calories": 298
+  },
+  {
+    "id": 41,
+    "name": "Soy chunks",
+    "serving": "100 g (illustrative)",
+    "protein": 18,
+    "carbs": 13,
+    "fats": 9,
+    "calories": 205
+  },
+  {
+    "id": 42,
+    "name": "Tofu",
+    "serving": "100 g (illustrative)",
+    "protein": 25,
+    "carbs": 24,
+    "fats": 12,
+    "calories": 304
+  },
+  {
+    "id": 43,
+    "name": "Sprouts",
+    "serving": "100 g (illustrative)",
+    "protein": 8,
+    "carbs": 35,
+    "fats": 1,
+    "calories": 181
+  },
+  {
+    "id": 44,
+    "name": "Quinoa",
+    "serving": "100 g (illustrative)",
+    "protein": 15,
+    "carbs": 46,
+    "fats": 4,
+    "calories": 280
+  },
+  {
+    "id": 45,
+    "name": "Sweet potato",
+    "serving": "100 g (illustrative)",
+    "protein": 22,
+    "carbs": 9,
+    "fats": 7,
+    "calories": 187
+  },
+  {
+    "id": 46,
+    "name": "Potato",
+    "serving": "100 g (illustrative)",
+    "protein": 5,
+    "carbs": 20,
+    "fats": 10,
+    "calories": 190
+  },
+  {
+    "id": 47,
+    "name": "Broccoli",
+    "serving": "100 g (illustrative)",
+    "protein": 12,
+    "carbs": 31,
+    "fats": 13,
+    "calories": 289
+  },
+  {
+    "id": 48,
+    "name": "Spinach",
+    "serving": "100 g (illustrative)",
+    "protein": 19,
+    "carbs": 42,
+    "fats": 2,
+    "calories": 262
+  },
+  {
+    "id": 49,
+    "name": "Carrot",
+    "serving": "100 g (illustrative)",
+    "protein": 2,
+    "carbs": 5,
+    "fats": 5,
+    "calories": 73
+  },
+  {
+    "id": 50,
+    "name": "Cucumber",
+    "serving": "100 g (illustrative)",
+    "protein": 9,
+    "carbs": 16,
+    "fats": 8,
+    "calories": 172
+  },
+  {
+    "id": 51,
+    "name": "Tomato",
+    "serving": "100 g (illustrative)",
+    "protein": 16,
+    "carbs": 27,
+    "fats": 11,
+    "calories": 271
+  },
+  {
+    "id": 52,
+    "name": "Corn",
+    "serving": "100 g (illustrative)",
+    "protein": 23,
+    "carbs": 38,
+    "fats": 14,
+    "calories": 370
+  },
+  {
+    "id": 53,
+    "name": "Bread",
+    "serving": "100 g (illustrative)",
+    "protein": 6,
+    "carbs": 49,
+    "fats": 3,
+    "calories": 247
+  },
+  {
+    "id": 54,
+    "name": "Whole wheat bread",
+    "serving": "100 g (illustrative)",
+    "protein": 13,
+    "carbs": 12,
+    "fats": 6,
+    "calories": 154
+  },
+  {
+    "id": 55,
+    "name": "Pasta",
+    "serving": "100 g (illustrative)",
+    "protein": 20,
+    "carbs": 23,
+    "fats": 9,
+    "calories": 253
+  },
+  {
+    "id": 56,
+    "name": "Noodles",
+    "serving": "100 g (illustrative)",
+    "protein": 3,
+    "carbs": 34,
+    "fats": 12,
+    "calories": 256
+  },
+  {
+    "id": 57,
+    "name": "Khichdi",
+    "serving": "100 g (illustrative)",
+    "protein": 10,
+    "carbs": 45,
+    "fats": 1,
+    "calories": 229
+  },
+  {
+    "id": 58,
+    "name": "Biryani",
+    "serving": "100 g (illustrative)",
+    "protein": 17,
+    "carbs": 8,
+    "fats": 4,
+    "calories": 136
+  },
+  {
+    "id": 59,
+    "name": "Sambar",
+    "serving": "100 g (illustrative)",
+    "protein": 24,
+    "carbs": 19,
+    "fats": 7,
+    "calories": 235
+  },
+  {
+    "id": 60,
+    "name": "Rasam",
+    "serving": "100 g (illustrative)",
+    "protein": 7,
+    "carbs": 30,
+    "fats": 10,
+    "calories": 238
+  },
+  {
+    "id": 61,
+    "name": "Dhokla",
+    "serving": "100 g (illustrative)",
+    "protein": 14,
+    "carbs": 41,
+    "fats": 13,
+    "calories": 337
+  },
+  {
+    "id": 62,
+    "name": "Besan chilla",
+    "serving": "100 g (illustrative)",
+    "protein": 21,
+    "carbs": 52,
+    "fats": 2,
+    "calories": 310
+  },
+  {
+    "id": 63,
+    "name": "Protein shake",
+    "serving": "100 g (illustrative)",
+    "protein": 4,
+    "carbs": 15,
+    "fats": 5,
+    "calories": 121
+  },
+  {
+    "id": 64,
+    "name": "Whey protein",
+    "serving": "100 g (illustrative)",
+    "protein": 11,
+    "carbs": 26,
+    "fats": 8,
+    "calories": 220
+  },
+  {
+    "id": 65,
+    "name": "Cottage cheese",
+    "serving": "100 g (illustrative)",
+    "protein": 18,
+    "carbs": 37,
+    "fats": 11,
+    "calories": 319
+  },
+  {
+    "id": 66,
+    "name": "Black beans",
+    "serving": "100 g (illustrative)",
+    "protein": 25,
+    "carbs": 48,
+    "fats": 14,
+    "calories": 418
+  },
+  {
+    "id": 67,
+    "name": "Lentils",
+    "serving": "100 g (illustrative)",
+    "protein": 8,
+    "carbs": 11,
+    "fats": 3,
+    "calories": 103
+  },
+  {
+    "id": 68,
+    "name": "Watermelon",
+    "serving": "100 g (illustrative)",
+    "protein": 15,
+    "carbs": 22,
+    "fats": 6,
+    "calories": 202
+  },
+  {
+    "id": 69,
+    "name": "Strawberries",
+    "serving": "100 g (illustrative)",
+    "protein": 22,
+    "carbs": 33,
+    "fats": 9,
+    "calories": 301
+  },
+  {
+    "id": 70,
+    "name": "Dates",
+    "serving": "100 g (illustrative)",
+    "protein": 5,
+    "carbs": 44,
+    "fats": 12,
+    "calories": 304
+  },
+  {
+    "id": 71,
+    "name": "Raisins",
+    "serving": "100 g (illustrative)",
+    "protein": 12,
+    "carbs": 7,
+    "fats": 1,
+    "calories": 85
+  }
+]

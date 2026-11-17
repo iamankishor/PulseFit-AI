@@ -1,0 +1,15 @@
+
+/* Functional navbar global search */
+.global-search{position:relative;width:min(500px,55%);min-width:0}
+.global-search .top-search{width:100%;box-sizing:border-box}
+.global-search .top-search input{width:100%;min-width:0;border:0;background:transparent;outline:none;box-shadow:none;padding:0;font:inherit;color:#102018}
+.global-search .top-search input:focus{outline:none;border:0}
+.global-search-results{position:absolute;z-index:1000;top:calc(100% + 8px);left:0;right:0;max-height:360px;overflow-y:auto;background:#fff;border:1px solid #dce3ed;border-radius:13px;box-shadow:0 14px 36px #10201820;padding:7px}
+.search-result{width:100%;display:flex;align-items:center;gap:9px;padding:10px;border:0;border-radius:8px;background:transparent;text-align:left;cursor:pointer}
+.search-result:hover,.search-result:focus{background:#effbf1}
+.search-result-type{font-size:10px;font-weight:700;color:#087f30;background:#e5faea;border-radius:5px;padding:4px 6px;flex-shrink:0}
+.search-result-name{font-size:13px;color:#152239;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.search-result small{font-size:11px;color:#748194;white-space:nowrap}
+.search-status{padding:15px;color:#748194;font-size:13px}
+@media(max-width:1200px){.global-search{width:42%}}
+@media(max-width:900px){.global-search{display:none}}
