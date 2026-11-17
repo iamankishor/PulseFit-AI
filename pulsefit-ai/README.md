@@ -1,52 +1,169 @@
-# PulseFit AI v4 — MERN Fitness Portfolio
+<div align="center">
 
-React 18 + Vite 5, Express 4 + Mongoose 8, MongoDB, Socket.io, Recharts. White/green responsive UI. This project is a portfolio prototype, **not** a production-hardened fitness or payments platform.
+# 💚 PulseFit AI
 
-## Start locally (Node 18+, MongoDB)
+### Your smart fitness companion
+
+**A full-stack fitness platform for tracking workouts, monitoring progress, managing nutrition, and getting AI-powered fitness guidance.**
+
+[![React](https://img.shields.io/badge/React-18-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Gemini](https://img.shields.io/badge/Google-Gemini_AI-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
+
+**Built by [Aman Kishor](https://github.com/iamankishor)**
+
+</div>
+
+---
+
+## 📸 Project Preview
+
+### Fitness Dashboard
+
+Personalized overview with workout statistics, total training volume, streaks, achievement badges, and a 12-week volume chart.
+
+![PulseFit AI Dashboard](screenshots/dashboard.png)
+
+### Gemini AI Fitness Coach
+
+Fitness-focused conversational assistant with suggested prompts, searchable conversation history, and new-chat functionality.
+
+![PulseFit AI Coach](screenshots/ai-coach.png)
+
+### Workout History
+
+Browse recorded workouts, search or filter exercises, and review training volume.
+
+![PulseFit Workout History](screenshots/workout-history.png)
+
+### Profile Management
+
+Manage profile information, fitness details, achievements, preferences, and profile photos.
+
+![PulseFit Profile](screenshots/profile.png)
+
+---
+
+## ✨ Features
+
+- **Fitness dashboard:** Workout summaries, streaks, volume analytics, and achievement tracking.
+- **Workout tracker:** Record exercises and review workout history.
+- **AI fitness coach:** Google Gemini-powered conversations about training, nutrition, and recovery, with saved chat history.
+- **Progress analytics:** Charts and training progress insights.
+- **Food tracker:** Log meals and track nutrition.
+- **Gym buddies and chat:** Social fitness features and messaging.
+- **User profiles:** Edit personal information, fitness details, and profile photo.
+- **Additional tools:** The project also includes optional fitness features accessible from the sidebar.
+
+> PulseFit AI is a portfolio/demo project. Fitness and nutrition information is educational and not a substitute for professional medical advice.
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+| --- | --- |
+| Frontend | React 18, Vite, React Router, CSS, Lucide React |
+| Charts | Recharts |
+| Backend | Node.js, Express.js |
+| Database | MongoDB, Mongoose |
+| Authentication | JWT, bcryptjs |
+| AI integration | Google Gemini API (`@google/genai`) |
+| Realtime | Socket.IO |
+| API requests | Axios |
+| Optional Python service | FastAPI skeleton (not implemented for production AI inference) |
+
+## 📁 Project Structure
+
+```text
+pulsefit-ai/
+├── frontend/          # React + Vite client
+├── backend/           # Express API, MongoDB models, routes
+├── ai-engine/         # Optional Python/FastAPI skeleton
+├── screenshots/       # README preview images
+└── README.md
+```
+
+## 🚀 Run Locally
+
+### Prerequisites
+
+- Node.js 18 or newer
+- MongoDB (local or Atlas)
+- Google Gemini API key for AI Coach
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/iamankishor/PulseFit-AI.git
+cd PulseFit-AI
+```
+
+> If your repository contains a nested `pulsefit-ai` directory, run `cd pulsefit-ai` before the next steps.
+
+### 2. Set up the backend
 
 ```bash
 cd backend
 npm install
-cp .env.example .env   # On Windows CMD: copy .env.example .env
-# Replace JWT_SECRET with a random 32+ character value
-npm run seed
+```
+
+Copy `.env.example` to `.env` (Windows PowerShell):
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Configure your own environment variables in `backend/.env`:
+
+```dotenv
+MONGO_URI=mongodb://127.0.0.1:27017/pulsefit
+JWT_SECRET=replace-with-your-own-long-random-secret
+GEMINI_API_KEY=your-own-gemini-api-key
+GEMINI_MODEL=gemini-2.5-flash
+PORT=5000
+CLIENT_URL=http://localhost:5173
+```
+
+`GEMINI_MODEL` is configurable; use a model supported by your API key. **Never commit `.env` or real secrets.**
+
+Start the backend:
+
+```bash
 npm run dev
 ```
 
-In a second terminal:
+Optional: `npm run seed` populates demonstration data, but **it deletes existing collections**. Use it only with a disposable development database.
+
+### 3. Set up the frontend
+
+Open a second terminal in the project directory:
 
 ```bash
 cd frontend
 npm install
-cp .env.example .env
 npm run dev
 ```
 
-Open http://localhost:5173 or http://127.0.0.1:5173. API health: http://localhost:5000/api/health.
+If the frontend needs an API URL override, create `frontend/.env` with:
 
-Demo: `demo@example.com` / `demo1234`; admin: `admin@pulsefit.in` / `admin1234`; buddies: `buddy.rohan@example.com` / `buddy1234` (and other names). **Seed deletes existing collections**: run only against a disposable database. Change all demo credentials before any public deployment.
+```dotenv
+VITE_API_URL=http://localhost:5000/api
+```
 
-## AI honesty
-- Coach: keyword rules informed by user stats; **not an LLM**.
-- Diet plan: Mifflin-St Jeor BMR/TDEE, deterministic macros and illustrative Indian meals; **not ML**. Not medical advice.
-- Food database: 70+ **illustrative** per-serving macro estimates, not independently verified nutrition facts.
-- Transformation filters: plain CSS; **no AI photo analysis**.
-- Form Check: MediaPipe Pose from CDN + angle thresholds; heuristic reps, not a medically validated form assessment.
-- Python FastAPI: optional skeleton only; both endpoints explicitly return `not_implemented`.
-- Checkout: **DUMMY** 30-day premium activation; no payment gateway or actual ₹199 charge. Never expose this bypass on a real paid product.
+Open **http://localhost:5173** in your browser.
 
-## Diet contract
-POST `/api/diet/plan` (premium JWT): `{ "age":23,"gender":"male","weightKg":76,"heightCm":178,"activity":"moderate","goal":"fat-loss","dietType":"veg" }`. Returns `bmr`, `tdee`, `targetCalories`, `macros`, `meals`. BMR = 1763, TDEE ≈ 2733, target ≈ 2186, protein ≈ 137 g, fats ≈ 61 g, carbs ≈ 272 g (rounding may vary by 1). GET returns saved plan. Free users get HTTP 403 `{ "code":"premium_required" }`.
+## 🔒 Security Notes
 
-## Optional Python skeleton
-`cd ai-engine && pip install -r requirements.txt && uvicorn main:app --reload --port 8000`. POST `/form-check` and `/macro-scan` with `{ "image_url":"..." }` return explicit unimplemented responses.
+- Keep API keys, database credentials, and JWT secrets in local environment files only.
+- Do not commit uploaded user images or other private user data.
+- Demo credentials and seeded accounts are intended for local development only.
+- Before public deployment, add appropriate production security, persistent media storage, and validation.
 
-## Deployment
-Create free MongoDB Atlas cluster, deploy `backend` to Render with `MONGO_URI`, `JWT_SECRET`, `CLIENT_URL=https://your-app.vercel.app`; deploy `frontend` to Vercel with root `frontend` and `VITE_API_URL=https://your-render-url/api`. Vercel SPA rewrite is configured. Render's ephemeral filesystem means **local Multer uploads are not durable**; use persistent object storage before production. Free-tier availability and limits may change.
+## 👨‍💻 Developer
 
-## Known prototype limitations
-Socket message delivery works with authenticated buddy checks, but read receipts/unread counters and reconnect recovery are basic. Location matching is approximate from user-entered coordinates; no browser geolocation is requested. Photo storage is local and food macros are estimates. Challenge leaderboards count check-ins, including for volume-type challenges. Admin and seed data are demonstration-only. Validate all user-supplied data more thoroughly, add CSRF/XSS defenses, tests, moderation, upload scanning, stronger pagination, and transaction-safe workflows before production.
+**Aman Kishor** — MERN Stack Developer  
+GitHub: [@iamankishor](https://github.com/iamankishor)
 
+---
 
-## Free edition changes
-All features are free. The premium badge, plans UI, dummy checkout API, and diet-plan premium middleware have been removed. The Diet Plan Generator remains rule-based and is accessible to all authenticated users. Legacy plan fields may remain in the User model and auth payload for backward compatibility with existing databases.
+<div align="center">Made with 💚 for learning, building, and improving fitness experiences.</div>
