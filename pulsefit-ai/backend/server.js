@@ -25,9 +25,20 @@ import programs from './routes/programs.js';
 import diet from './routes/diet.js';
 import admin from './routes/admin.js';
 const app = express();
-const origins = [...new Set(['http://localhost:5173', 'http://127.0.0.1:5173', ...(process.env.CLIENT_URL || '').split(',').filter(Boolean)])];
+const origins = [
+    ...new Set([
+        'http://localhost:5173',
+        'http://127.0.0.1:5173',
+        'https://pulse-fit-ai-amber.vercel.app',
+        ...(process.env.CLIENT_URL || '')
+            .split(',')
+            .map(url => url.trim().replace(/\/+$/, ''))
+            .filter(Boolean)
+    ])
+];
+
 app.use(cors({
-  origin: origins
+    origin: origins
 }));
 app.use(express.json({
   limit: '1mb'
